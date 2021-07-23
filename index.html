@@ -4,48 +4,59 @@
     <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css/styles.css">
   <title>El Blog de Yajaira</title>
 </head>
 <body>
-  <Header>
-    <p>Setup</p>
+  <Header><!--con tecla alt y tecla de direccion puedes mover lineas a donde quieras</!-->
     <nav>
-    <Ol>
-      <a href="#google-chrome"> <!--a=href sirve para hacer enlaces internos a seccciones de la pagina, tambien externos!!</!-->
-        <Li>Google Chrome</Li>
-      </a>
-      <a href="#visual-studio-code">
-          <Li>Visual Studio Code</Li>
-      </a>
-        <a href="#figma">
-           <Li>Figma</Li>
-        </a>
-        <a href="#github">
-           <Li>GitHub</Li>
-        </a>
-    </ol><!--listas ordenadas las OL numeran los items que tengas en un lista</!-->
-    <p>Conceptos esenciales del Desarrollo Web</p>
-    <ol>
-        <a href="#que-es-html">
-          <li>Qué es HTML</li>
-        </a>
-            <a href="#etiquetas">
-              <li>Etiquetas</li>
+     <details>
+      <summary>
+        SetUp
+      </summary><!--summary y details serviran para el menu desplegable deben ir juntas</!-->
+      <Ol>
+       <a href="#google-chrome"> <!--a=href sirve para hacer enlaces internos a seccciones de la pagina, tambien externos!!</!-->
+         <Li>Google Chrome</Li>
+       </a>
+             <a href="#visual-studio-code">
+                 <Li>Visual Studio Code</Li>
+             </a>
+                             <a href="#figma">
+                               <Li>Figma</Li>
+                             </a>
+                 <a href="#github">
+                   <Li>GitHub</Li>
+                 </a>
+      </ol><!--listas ordenadas las OL enumeran los items que tengas en un lista</!-->
+     </nav>
+     </details>
+        <nav>
+         <details><!--con el atributo open despues de details o sea details open podemos poner por defecto que nuestro menu este desplegado</!-->
+           <summary>
+            Conceptos esenciales del Desarrollo Web
+          </summary>
+        <ol>
+            <a href="#que-es-html">
+              <li>Qué es HTML</li>
             </a>
-                  <a href="#dom">
-                      <li> DOM</li>
-                  </a>
-        <a href="#semantica">
-          <li>Semántica</li>
-        </a>
-          <a href="#atributos">
-            <li>Atributos</li>
-          </a>
-      <a href="#css">
-        <li>CSS</li>
-      </a>
-    </ol>
-    </nav>
+                <a href="#etiquetas"><!--LA IDENTACION ES IMPORTANTE ES UNA BUENA PRACTICA</!-->
+                  <li>Etiquetas</li>
+                </a>
+                      <a href="#dom">
+                          <li> DOM</li>
+                      </a>
+                    <a href="#semantica">
+                      <li>Semántica</li>
+                    </a>
+              <a href="#atributos">
+                <li>Atributos</li>
+              </a>
+              <a href="#css">
+                <li>CSS</li>
+              </a>
+        </ol>
+        </nav>
+      </details>
   </Header>
   <h1>Curso esencial de HTML y CSS </h1>
   <P>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de
@@ -76,10 +87,24 @@
   </p>
   <hr>
   <h2>Conceptos esenciales del Desarrollo Web</h2>
-  <h3 id="que-es-html"h3>Qué es HTML</h3>
+  <h3 id="que-es-html"h3>Qué es HTML</h3><!--code es un atributo que nos permite inyectar codigo como una especie de muestra. lo usas luego de etiqueta p</!-->
 <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado
   y la estructura del contenido.
-</p>
+<pre><!--con etiqueta pre tambien podemos inyectar codigo de muestra sin identacion</!-->
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</p><!--con https://www.freeformatter.com/html-escape.html podemos poner muestra de codigo en texto plano y no hacerlo a mano</!-->
 <h3 id="etiquetas">Etiquetas</h3>
 <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene
   características y usos diferentes aunque visualmente den un resultado similar.</p>
@@ -116,27 +141,26 @@ Es una caracteristica del CSS que hace que los elementos pertenecientes a una pa
 </p>
  <h3>El modelo de caja está compuesto por:</h3>
  <ol>
-   <li>Tamaño del del contenido / ancho y alto</li>
+   <li>Tamaño del contenido / ancho y alto</li>
     <li>Padding / Relleno</li>
-    <li>Border / Bordes</li>
+        <li>Border / Bordes</li>
    <li>Margin / Márgenes</li>
  </ol>
 <h3>Propiedades físicas para el modelo de caja:</h3>
 <ul> <!--las UL SON LISTAS DESORDENADAS QUE AGREGAN UN PUNTO A LOS ITEMS DE UNA LISTA</!-->
    <li>width / height</li>
     <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
-    <li>border / border-top | border-right | border-bottom | border-left</li>
+      <li>border / border-top | border-right | border-bottom | border-left</li>
    <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
 </ul>
 <h3>Propiedades lógicas para el modelo de caja:</h3>
 <ul>
   <li>inline-size / block-size</li>
-   <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end</li>
-   <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
-  <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
+    <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end</li>
+      <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
+    <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
 </ul>
 <p>Si tienes alguna pregunta escríbeme a</p>
 <a href="mailto:yajamirena@hotmail.com">yajamirena@hotmail.com</a>
 </body>
-
 </html>
