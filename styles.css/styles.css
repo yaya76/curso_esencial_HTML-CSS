@@ -35,11 +35,14 @@ font-size: 16px;
 }*/
 body{
   color: var(--gray30);
-  font-family: charter;
-} /*se crea una regla por cada elemento y se le da los parametros por ejemplo aqui estamos poniendo el color a la fuente en general*/
+  font-family: 'Roboto', sans-serif;
+  /*font-family: charter; ejemplo 1 de como colocar fuentes via subir archivos de google fonts*/
+}
+ /*se crea una regla por cada elemento y se le da los parametros por ejemplo aqui estamos poniendo el color a la fuente en general*/
 a{
   color: var(--gray30);
-} /*se crea una regla por cada elemento y se le da los parametros por ejemplo aqui estamos poniendo el color a cada ancla*/
+}
+/*se crea una regla por cada elemento y se le da los parametros por ejemplo aqui estamos poniendo el color a cada ancla*/
 header{
   font-size: 14px;
   color: var(--gray10);
@@ -64,6 +67,17 @@ h2{
 h3{
   font-size: 24px;
 }
+pre{
+  background-color: #FEC62E;
+}
+.hero{
+  background-image:  linear-gradient(3.36deg, #212325 -63.62%, rgba(255, 255, 255, 0) 43.49%), url('../images/patron-1.png');
+  /*background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover; ejemplos de como manipular un elemento en background y degradado*/
+  height: 350px;
+}
+
 /*p{
   font-size: 16px; /* OOJOOOO por defecto el tamaño fuente es de 16px, para ponerlo solo debes escribir
   = html{font-size: 16px;} y como se ve todo va por jerarquia html body header h1 etc etc
