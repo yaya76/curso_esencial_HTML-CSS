@@ -77,7 +77,17 @@ pre{
   background-size: cover; ejemplos de como manipular un elemento en background y degradado*/
   height: 350px;
 }
-
+h3::before {
+  content:'-';
+  /*seudo elementos son funcionalidades en css para que el contenido puesto en ellos no tenga peso semantico o no se lea por el navegador*/
+}
+h3::after {
+content: '';
+width: 32px;
+height: 4px;
+background: var(--gray40);
+display: inline-block;
+}
 /*p{
   font-size: 16px; /* OOJOOOO por defecto el tamaño fuente es de 16px, para ponerlo solo debes escribir
   = html{font-size: 16px;} y como se ve todo va por jerarquia html body header h1 etc etc
