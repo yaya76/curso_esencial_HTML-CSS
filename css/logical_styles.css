@@ -36,6 +36,7 @@ font-size: 16px;
 body{
   color: var(--gray30);
   font-family: 'Roboto', sans-serif;
+  margin: 0;
   /*font-family: charter; ejemplo 1 de como colocar fuentes via subir archivos de google fonts*/
 }
  /*se crea una regla por cada elemento y se le da los parametros por ejemplo aqui estamos poniendo el color a la fuente en general*/
@@ -60,6 +61,8 @@ font-weight: bold;
 } /* en css "negrita" se coloca con font-weight: bold;*/
 h1{
   font-size: 60px;
+  margin: top right bottom left;
+  margin: 64px 10px 16px 10px;
 } /*se crea una regla por cada elemento y se le da los parametros por ejemplo aqui estamos poniendo el valor de tamaño a cada h1 de 60 pixeles*/
 h2{
   font-size: 32px;
